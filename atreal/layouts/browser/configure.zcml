@@ -1,0 +1,31 @@
+<configure xmlns="http://namespaces.zope.org/browser">
+
+  <page
+      for="zope.app.container.interfaces.IContainer"
+      name="atreal_matrix"
+      class=".listing.MatrixView"
+      permission="zope2.View"
+      template="listing.pt"
+      />
+
+  <page
+      for="*"
+      name="matrix"
+      class=".listing.MatrixDisplay"
+      permission="zope2.View"
+      />
+
+  <include package="plone.app.contentmenu" />
+  <menuItems
+      for="zope.app.container.interfaces.IContainer"
+      menu="plone_displayviews">
+
+    <menuItem
+	title="Vue matricielle"
+	action="atreal_matrix"
+	description="Une vue sur 3 niveaux d'arborescence." />
+
+  </menuItems>
+
+
+</configure>

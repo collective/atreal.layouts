@@ -1,0 +1,41 @@
+<table style="width: 100%"
+       tal:condition="items"
+       tal:attributes="class string:matrix-lvl-$level"
+       tal:define="items options/items;
+		   level options/level;
+		   icon options/icons;
+		   ncols python:view.divide(items)">
+  
+  <tr>
+    <td tal:repeat="col python:(0, 1, 2)" style="vertical-align: top; width:33%">
+    <tal:loop repeat="item python:items[col*ncols:(col+1)*ncols]">
+
+      <dl tal:define="item_url item/absolute_url;
+		      item_icon item/item_icon;
+		      item_type_class string:contenttype-${item/normalized_portal_type};
+		      item_wf_state_class string:state-${item/normalized_review_state};
+		      item_creator item/Creator;
+		      ">
+	<dt class="summary"
+	    tal:attributes="class string:$item_type_class summary">
+	  <img tal:replace="structure item_icon/html_tag"
+	       tal:condition="icon" />
+	  <span class="discreet" tal:condition="not:icon">&bull;</span>
+	  <a href="#"
+	     tal:attributes="href string:${item_url}/view;
+			     class string:${item_wf_state_class} url"
+	     tal:content="item/Title">
+	    Item Title
+	  </a>
+	</dt>
+	<dd
+	    tal:define="children item/children|nothing"
+	    tal:condition="children">
+	  <div tal:define="macro context/@@matrix"
+	       tal:replace="structure python: macro.display(children, filter=True, level=level+1)" />
+	</dd>
+      </dl>
+    </tal:loop>
+    </td>
+  </tr>
+</table>

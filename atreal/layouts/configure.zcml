@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
+
+  <include package=".browser" />
+
+  <genericsetup:registerProfile
+      name="atreal_matrix"
+      title="AtReal Matrix Layout"
+      directory="profiles/matrix"
+      description="AtReal Matrix Layout profile"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>
