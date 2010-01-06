@@ -1,16 +1,22 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
-    xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="atreal.layouts">
 
-  <include package=".browser" />
+    <five:registerPackage package="." initialize=".initialize" />
+    
+    <include package=".browser" />
 
-  <genericsetup:registerProfile
-      name="atreal_matrix"
-      title="AtReal Matrix Layout"
-      directory="profiles/matrix"
-      description="AtReal Matrix Layout profile"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
+    <i18n:registerTranslations directory="locales" />
+    
+    <genericsetup:registerProfile
+        name="default"
+        title="atRealLayouts"
+        directory="profiles/default"
+        description="Various Layouts for Plone"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
 
 </configure>

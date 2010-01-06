@@ -18,7 +18,7 @@
        tal:content="context/Description" />
 
     <tal:condition condition="view/folders|nothing">
-    <h3>Arborescence</h3>
+    <h3 i18n:domain="atreal.layouts" i18n:translate="">Tree</h3>
     <div id="matrix">
       <div tal:replace="structure python: macro.display(view.folders, level=0, icons=True)" />
     </div>
@@ -26,13 +26,13 @@
 
     <tal:condition condition="view/content|nothing">
     <hr tal:condition="view/folders|nothing" />
-    <h3>Contenu</h3>
+    <h3 i18n:domain="atreal.layouts" i18n:translate="">Content</h3>
     <div>
       <table class="listing">
 	<thead>
 	  <tr>
-	    <th>Description, Titre ou ID</th>
-	    <th>Modification</th>
+	    <th i18n:domain="atreal.layouts" i18n:translate="">Description, Title or ID</th>
+	    <th i18n:translate="">Edited</th>
 	  </tr>
 	</thead>
 	<tbody>
@@ -46,7 +46,7 @@
 		 tal:attributes="href content/getURL"
 		 tal:content="python:view.itemText(content)" />
 	    </td>
-	    <td tal:content="content/item/ModificationDate" />
+	    <td tal:content="python:view.format_date(content['item']['modified'])" />
 	  </tr>
 	  </tal:loop>
 	</tbody>

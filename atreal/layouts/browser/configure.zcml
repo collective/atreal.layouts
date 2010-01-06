@@ -1,31 +1,35 @@
-<configure xmlns="http://namespaces.zope.org/browser">
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="atreal.layouts">
 
-  <page
-      for="zope.app.container.interfaces.IContainer"
-      name="atreal_matrix"
-      class=".listing.MatrixView"
-      permission="zope2.View"
-      template="listing.pt"
-      />
+    <browser:page
+        for="zope.app.container.interfaces.IContainer"
+        name="atreal_matrix"
+        class=".listing.MatrixView"
+        permission="zope2.View"
+        template="listing.pt"
+        layer="atreal.layouts.interfaces.ILayer"
+        />
 
-  <page
-      for="*"
-      name="matrix"
-      class=".listing.MatrixDisplay"
-      permission="zope2.View"
-      />
+    <browser:page
+        for="*"
+        name="matrix"
+        class=".listing.MatrixDisplay"
+        permission="zope2.View"
+        layer="atreal.layouts.interfaces.ILayer"
+        />
 
-  <include package="plone.app.contentmenu" />
-  <menuItems
-      for="zope.app.container.interfaces.IContainer"
-      menu="plone_displayviews">
+    <include package="plone.app.contentmenu" />
 
-    <menuItem
-	title="Vue matricielle"
-	action="atreal_matrix"
-	description="Une vue sur 3 niveaux d'arborescence." />
-
-  </menuItems>
-
+    <browser:menuItem
+        for="zope.app.container.interfaces.IContainer"
+        menu="plone_displayviews"
+        title="Matrix view"
+        action="atreal_matrix"
+        description="A three levels tree view."
+        layer="atreal.layouts.interfaces.ILayer"
+        />
 
 </configure>

@@ -22,10 +22,12 @@
       </dt>
       <tal:children define="children item/children|nothing"
 	  	    condition="children">
+	<blockquote>
 	<dd tal:define="macro context/@@matrix;
 	                content python: macro.display(children, filter=True, level=level+1, icons=icon)"
 	     tal:condition="python:content.strip()"
 	     tal:content="structure content" />
+	</blockquote>
       </tal:children>
     </dl>
   </tal:loop>

@@ -1,39 +1,34 @@
 from setuptools import setup, find_packages
-from os.path import join
+import os
 
-name = 'atreal.layouts'
-path = name.split('.') + ['version.txt']
-version = open(join(*path)).read().strip()
-readme = open("README.txt").read()
-history = ""
+version = '0.2.0'
 
-setup(name = name,
-      version = version,
-      description = 'AtReal Layouts',
-      long_description = readme[readme.find('\n\n'):] + '\n' + history,
-      keywords = 'plone CMS zope',
-      author = 'AtReal',
-      # FIXME
-      author_email = 'fixme@atreal.net',
-      url = 'http://www.atreal.net',
-      # FIXME
-      download_url = 'http://pypi.python.org/pypi/atreal.layouts',
-      license = 'GPL',
-      packages = find_packages(),
-      namespace_packages = ['atreal'],
-      include_package_data = True,
-      platforms = 'Any',
-      zip_safe = False,
+setup(name='atreal.layouts',
+      version=version,
+      description="Various layouts for Plone",
+      long_description=open("README.txt").read() + "\n" +
+                       open(os.path.join("docs", "HISTORY.txt")).read(),
+      # Get more strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+      classifiers=[
+        "Framework :: Plone",
+        "Programming Language :: Python",
+        ],
+      keywords='atreal plone layouts',
+      author='atReal',
+      author_email='contact@atreal.net',
+      url='http://www.atreal.net',
+      license='GPL',
+      packages=find_packages(exclude=['ez_setup']),
+      namespace_packages=['atreal'],
+      include_package_data=True,
+      zip_safe=False,
       install_requires=[
-        'setuptools',
-        'plone.transforms'
+          'setuptools',
+          # -*- Extra requirements: -*-
       ],
-      classifiers = [
-        'Environment :: Web Environment',
-        'Framework :: Plone',
-        'Intended Audience :: Other Audience',
-        'License :: OSI Approved :: GNU General Public License (GPL)',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-      ],
-)
+      entry_points="""
+      # -*- Entry points: -*-
+      """,
+      setup_requires=["PasteScript"],
+      paster_plugins = ["ZopeSkel"],
+      )

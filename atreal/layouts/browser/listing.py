@@ -59,6 +59,10 @@ class MatrixView(BrowserView):
                 item['getURL'] = self.special_link(item)
                 self.content.append(item)
 
+    def format_date(self, date):
+        context = aq_inner(self.context)
+        util = getToolByName(context, 'translation_service')
+        return util.ulocalized_time(date, True, None, context)
 
 
 class MatrixDisplay(BrowserView):
