@@ -14,6 +14,11 @@ First install the package via the quickinstaller then add "atreal_matrix" in
 "Available view methods" of the content type(s) (folderish) you want with this
 three level tree view.
 
+- Tatooine Icon Theme :
+First install the package via the quickinstaller then add
+"atreal_icontheme_tatooine" in "Layers (in order of precedence)" of your
+Default skin.
+
 
 Authors
 -------
