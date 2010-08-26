@@ -31,5 +31,14 @@
         description="A three levels tree view."
         layer="atreal.layouts.interfaces.ILayer"
         />
+        
+    <!-- Render the document actions -->
+    <browser:viewlet
+        name="atreal.layouts.abovecontenttitle.documentactions"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+        class=".viewlets.DocumentActionsViewlet"
+        permission="zope2.View"
+        layer="atreal.layouts.interfaces.IDocActionsAsIconsLayer"
+        />
 
 </configure>

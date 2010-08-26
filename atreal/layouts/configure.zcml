@@ -30,6 +30,14 @@
         />
 
     <genericsetup:registerProfile
+        name="document_actions_as_icons"
+        title="atRealLayouts : Document Actions As Icons"
+        directory="profiles/document_actions_as_icons"
+        description="Extension profile for Document Actions As Icons"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:registerProfile
         name="default"
         title="atRealLayouts : Default"
         directory="profiles/default"
