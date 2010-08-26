@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.3.0'
+version = '0.5.1'
 
 setup(name='atreal.layouts',
       version=version,
@@ -16,7 +16,7 @@ setup(name='atreal.layouts',
       keywords='atreal plone layouts',
       author='atReal',
       author_email='contact@atreal.net',
-      url='http://www.atreal.net',
+      url='https://svn.plone.org/svn/collective/atreal.layouts',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['atreal'],
