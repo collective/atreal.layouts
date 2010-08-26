@@ -3,7 +3,7 @@
     xmlns:cmf="http://namespaces.zope.org/cmf"
     i18n_domain="atreal.layouts">
 
-    <cmf:registerDirectory name="atreal_icontheme_tatooine"/>
+    <cmf:registerDirectory name="atreal_layouts_icontheme_tatooine"/>
     <cmf:registerDirectory name="atreal_layouts_extedit"/>
     
 </configure>

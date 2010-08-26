@@ -22,6 +22,14 @@
         />
 
     <genericsetup:registerProfile
+        name="icontheme_tatooine"
+        title="atRealLayouts : Icon Theme Tatooine"
+        directory="profiles/icontheme_tatooine"
+        description="Extension profile for Icon Theme Tatooine"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:registerProfile
         name="default"
         title="atRealLayouts : Default"
         directory="profiles/default"
