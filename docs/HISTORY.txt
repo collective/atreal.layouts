@@ -1,6 +1,24 @@
 Changelog
 =========
 
+0.5.0 - 2010-08-26
+------------------
+
+   - Added extedit profile
+     [tiazma]
+
+   - Clean-up profiles. Split each functionality 
+     into various profiles
+     [tiazma]
+
+
+
+
+0.4.0 - 2010-06-30
+------------------
+
+   - Viewlet Document Actions with icons added. [f10w]
+
 
 0.3.0 - 2010-03-15
 ------------------
