@@ -35,3 +35,7 @@ msgstr "Arborescence"
 #
 msgid "Matrix view"
 msgstr "Vue matricielle"
+
+#
+msgid "Direct edition"
+msgstr "Édition directe"

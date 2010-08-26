@@ -14,11 +14,20 @@
     <include file="skins.zcml" />
     
     <genericsetup:registerProfile
+        name="extedit"
+        title="atRealLayouts : External Editor Profile"
+        directory="profiles/extedit"
+        description="Extension profile for Zope External Editor"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:registerProfile
         name="default"
-        title="atRealLayouts"
+        title="atRealLayouts : Default"
         directory="profiles/default"
         description="Various Layouts for Plone"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
+
 
 </configure>
