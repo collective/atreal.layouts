@@ -14,6 +14,14 @@
     <include file="skins.zcml" />
     
     <genericsetup:registerProfile
+        name="restricted_access"
+        title="atRealLayouts : Restricted Access"
+        directory="profiles/restricted_access"
+        description="Extension profile for Restrict Access to Authenticated Users"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+    
+    <genericsetup:registerProfile
         name="extedit"
         title="atRealLayouts : External Editor Profile"
         directory="profiles/extedit"

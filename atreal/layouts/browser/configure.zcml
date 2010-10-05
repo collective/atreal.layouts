@@ -41,4 +41,23 @@
         layer="atreal.layouts.interfaces.IDocActionsAsIconsLayer"
         />
 
+    <!-- Render the document actions -->
+    <browser:viewlet
+        name="atreal.layouts.restrictedaccess"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class=".viewlets.restrictedAccessViewlet"
+        permission="zope2.View"
+        layer="atreal.layouts.interfaces.IRestrictedAccessLayer"
+        />
+    
+    <adapter factory=".controlpanel.atRealLayoutsControlPanelAdapter" />
+
+    <browser:page
+        name="atreallayouts-controlpanel"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        class=".controlpanel.atRealLayoutsControlPanel"
+        permission="cmf.ManagePortal"
+        layer="atreal.layouts.interfaces.ILayer"
+        />
+
 </configure>
