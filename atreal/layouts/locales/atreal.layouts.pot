@@ -3,8 +3,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: atreal.layouts\n"
-"POT-Creation-Date: 2010-01-06 18:00+0000\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2010-11-08 09:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,21 +17,42 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: atreal.layouts\n"
 
-#. Default: "Content"
 #: ./browser/listing.pt:29
 msgid "Content"
 msgstr ""
 
-#. Default: "Description, Title or ID"
 #: ./browser/listing.pt:34
 msgid "Description, Title or ID"
 msgstr ""
 
-#. Default: "Tree"
+#: ./profiles/extedit/actions.xml
+msgid "Direct edition"
+msgstr ""
+
+# 
+#. Default: "Vue matricielle"
+msgid "Matrix view"
+msgstr ""
+
 #: ./browser/listing.pt:21
 msgid "Tree"
 msgstr ""
 
-#
-msgid "Matrix view"
+#: ./browser/controlpanel.py:39
+msgid "atRealLayouts settings"
 msgstr ""
+
+#: ./browser/controlpanel.py:40
+msgid "atRealLayouts settings for this site."
+msgstr ""
+
+#. Default: "One by line"
+#: ./browser/controlpanel.py:20
+msgid "help_atreallayouts_restricted_access_anonurls"
+msgstr ""
+
+#. Default: "Anonym URLs"
+#: ./browser/controlpanel.py:18
+msgid "label_atreallayouts_restricted_access_anonurls"
+msgstr ""
+
