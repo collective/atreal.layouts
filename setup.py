@@ -29,6 +29,4 @@ setup(name='atreal.layouts',
       entry_points="""
       # -*- Entry points: -*-
       """,
-      setup_requires=["PasteScript"],
-      paster_plugins = ["ZopeSkel"],
       )
