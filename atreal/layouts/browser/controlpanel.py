@@ -37,5 +37,5 @@ class atRealLayoutsControlPanelAdapter(SchemaAdapterBase):
 class atRealLayoutsControlPanel(ControlPanelForm):
     form_fields = form.FormFields(IatRealLayoutsSchema)
     label = _("atRealLayouts settings")
-    description = _("atRealLayouts settings for this site.")
+    description = _("atRealLayouts settings for this site. Global settings for the package, may be useless for the profile you use.")
     form_name = _("atRealLayouts settings")

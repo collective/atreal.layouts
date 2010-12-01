@@ -43,7 +43,7 @@ msgid "atRealLayouts settings"
 msgstr ""
 
 #: ./browser/controlpanel.py:40
-msgid "atRealLayouts settings for this site."
+msgid "atRealLayouts settings for this site. Global settings for the package, may be useless for the profile you use."
 msgstr ""
 
 #. Default: "One by line"

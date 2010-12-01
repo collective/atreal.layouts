@@ -59,5 +59,11 @@
         permission="cmf.ManagePortal"
         layer="atreal.layouts.interfaces.ILayer"
         />
+        
+    <browser:resource
+        name="atreallayouts_icon.png"
+        file="atreallayouts_icon.png"
+        layer="atreal.layouts.interfaces.ILayer"
+        />
 
 </configure>

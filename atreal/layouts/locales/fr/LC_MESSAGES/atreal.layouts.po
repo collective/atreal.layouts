@@ -46,16 +46,16 @@ msgid "atRealLayouts settings"
 msgstr "Paramètres atRealLayouts"
 
 #: ./browser/controlpanel.py:40
-msgid "atRealLayouts settings for this site."
-msgstr "Paramètres atRealLayouts du site."
+msgid "atRealLayouts settings for this site. Global settings for the package, may be useless for the profile you use."
+msgstr "Paramètres atRealLayouts du site. Ces paramètres sont globaux pour le module, ils peuvent être inutiles selon le profil que vous avez installé."
 
 #. Default: "One by line"
 #: ./browser/controlpanel.py:20
 msgid "help_atreallayouts_restricted_access_anonurls"
-msgstr "Aide atRealLayouts"
+msgstr "Une par ligne"
 
 #. Default: "Anonym URLs"
 #: ./browser/controlpanel.py:18
 msgid "label_atreallayouts_restricted_access_anonurls"
-msgstr "Restreint l'accès aux adresses anonymes"
+msgstr "Listes des urls accessibles en anonyme"
 
