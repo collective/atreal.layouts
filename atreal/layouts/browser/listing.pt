@@ -32,7 +32,7 @@
 	<thead>
 	  <tr>
 	    <th i18n:domain="atreal.layouts" i18n:translate="">Description, Title or ID</th>
-	    <th i18n:translate="">Edited</th>
+	    <th i18n:domain="atreal.layouts" i18n:translate="">Edited</th>
 	  </tr>
 	</thead>
 	<tbody>

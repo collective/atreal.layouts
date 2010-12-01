@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-11-08 09:26+0000\n"
+"POT-Creation-Date: 2010-12-01 11:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,13 +29,16 @@ msgstr ""
 msgid "Direct edition"
 msgstr ""
 
-# 
-#. Default: "Vue matricielle"
-msgid "Matrix view"
+#: ./browser/listing.pt:35
+msgid "Edited"
 msgstr ""
 
 #: ./browser/listing.pt:21
 msgid "Tree"
+msgstr ""
+
+#: ./profiles/default/controlpanel.xml
+msgid "atRealLayouts"
 msgstr ""
 
 #: ./browser/controlpanel.py:39
@@ -56,3 +59,7 @@ msgstr ""
 msgid "label_atreallayouts_restricted_access_anonurls"
 msgstr ""
 
+# 
+#. Default: "Vue matricielle"
+msgid "Matrix view"
+msgstr ""

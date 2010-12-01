@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: atreal.layouts\n"
-"POT-Creation-Date: 2010-11-08 09:26+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"POT-Creation-Date: 2010-12-01 11:06+0000\n"
+"PO-Revision-Date: 2010-12-01 11:06+0000\n"
 "Last-Translator: Florent Michon <f10w>\n"
 "Language-Team: atReal Team <contact@atreal.net>\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,10 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: atreal.layouts\n"
 
-#. Default: "Content"
 #: ./browser/listing.pt:29
 msgid "Content"
 msgstr "Contenu"
 
-#. Default: "Description, Title or ID"
 #: ./browser/listing.pt:34
 msgid "Description, Title or ID"
 msgstr "Description, Titre ou ID"
@@ -31,15 +29,17 @@ msgstr "Description, Titre ou ID"
 msgid "Direct edition"
 msgstr "Édition directe"
 
-# 
-#. Default: "Vue matricielle"
-msgid "Matrix view"
-msgstr "Vue matricielle"
+#: ./browser/listing.pt:35
+msgid "Edited"
+msgstr "Modification"
 
-#. Default: "Tree"
 #: ./browser/listing.pt:21
 msgid "Tree"
 msgstr "Arborescence"
+
+#: ./profiles/default/controlpanel.xml
+msgid "atRealLayouts"
+msgstr ""
 
 #: ./browser/controlpanel.py:39
 msgid "atRealLayouts settings"
@@ -59,3 +59,7 @@ msgstr "Une par ligne"
 msgid "label_atreallayouts_restricted_access_anonurls"
 msgstr "Listes des urls accessibles en anonyme"
 
+# 
+#. Default: "Vue matricielle"
+msgid "Matrix view"
+msgstr "Vue matricielle"
