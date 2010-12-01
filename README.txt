@@ -31,12 +31,20 @@ First install the package via the quickinstaller then import the right GS
 profile : "atReal Layouts : Document Actions As Icons"
 
 
+Restricted Access to Authenticated Users
+----------------------------------------
+
+First install the package via the quickinstaller then import the right GS 
+profile : "atReal Layouts : Restricted Access"
+
+
 TODO
 ====
 
 * Wrap browser view into a GS profile
 * Add a global GS profile to install every layouts items
 * Uninstall profile for each GS profile
+
 
 Authors
 =======
