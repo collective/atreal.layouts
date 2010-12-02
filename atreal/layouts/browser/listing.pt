@@ -9,7 +9,8 @@
 <body>
   <metal:main fill-slot="main">
   <div tal:define="dummy view/createTree;
-		   macro context/@@matrix">
+                   toLocalizedTime nocall:context/@@plone/toLocalizedTime;
+		           macro context/@@matrix">
 
     <h1 class="documentFirstHeading"
 	tal:content="context/Title" />
@@ -46,7 +47,7 @@
 		 tal:attributes="href content/getURL"
 		 tal:content="python:view.itemText(content)" />
 	    </td>
-	    <td tal:content="python:view.format_date(content['item']['modified'])" />
+	    <td tal:content="python:toLocalizedTime(content['item']['modified'],long_format=1)" />
 	  </tr>
 	  </tal:loop>
 	</tbody>
