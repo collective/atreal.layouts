@@ -1,46 +1,42 @@
 Changelog
 =========
 
-0.5.0 - 2010-08-26
+0.6.1 - 2010-12-08
 ------------------
 
-   - Added extedit profile
-     [tiazma]
-
-   - Clean-up profiles. Split each functionality 
-     into various profiles
-     [tiazma]
+- Add restricted access viewlet. [f10w]
 
 
-
-
-0.4.0 - 2010-06-30
+0.5.1 - 2010-08-26
 ------------------
 
-   - Viewlet Document Actions with icons added. [f10w]
+- Added extedit profile. [tiazma]
+
+- Clean-up profiles. Split each functionality into various profiles. [tiazma]
+
+
+0.4.0 - Unreleased
+------------------
+
+- Viewlet Document Actions with icons added. [f10w]
 
 
 0.3.0 - 2010-03-15
 ------------------
 
-- Tatooine Icon Theme added.
-[Florent Michon]
+- Tatooine Icon Theme added. [Florent Michon]
 
 
 0.2.0 - 2010-01-06
 ------------------
 
-- Internationalization, Browser Layer Added, Cleanup.
-[Florent Michon]
+- Internationalization, Browser Layer Added, Cleanup. [Florent Michon]
 
-- Matrix Policy removed.
-[Florent Michon]
+- Matrix Policy removed. [Florent Michon]
 
 
-0.1.0 - unreleased
+0.1.0 - Unreleased
 ------------------
 
-- Initial development
-[Jean-Nicolas Bes]
-[Souheil Chelfouh]
-[Thierry Benita]
+- Initial development. [Jean-Nicolas Bes][Souheil Chelfouh][Thierry Benita]
+
