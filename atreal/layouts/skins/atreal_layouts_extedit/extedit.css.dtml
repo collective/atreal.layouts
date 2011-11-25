@@ -19,6 +19,13 @@ li#contentview-extedit a {
     background-repeat: no-repeat;
 }
 
+li#contentview-extedit a:hover {
+    padding-right: 20px;
+    background-image: url(&dtml-portal_url;/extedit_icon.gif);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
 
 /* </dtml-with> */
 

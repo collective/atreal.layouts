@@ -4,7 +4,9 @@ Changelog
 0.7.0 - Unreleased
 ------------------
 
-- Plone 4 Compatibility : Uptade CMF core permissions declaration in ZCML
+- Plone 4 Compatibility : Update CSS. [rbeylerian]
+
+- Plone 4 Compatibility : Uptade CMF core permissions declaration in ZCML.
   [rbeylerian]
 
 
