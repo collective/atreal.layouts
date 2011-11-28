@@ -1,14 +1,18 @@
 Changelog
 =========
 
-0.7.0 - Unreleased
+1.0.0 - Unreleased
 ------------------
+
+- Plone 4 Compatibility : Fix document_actions.pt template. [rbeylerian]
 
 - Plone 4 Compatibility : Update CSS. [rbeylerian]
 
 - Plone 4 Compatibility : Uptade CMF core permissions declaration in ZCML.
   [rbeylerian]
 
+- New major version for Plone 4. Plone 3 IS NO LONGER supported (Use last
+  version of branch 0.x.x for Plone 3). [rbeylerian]
 
 0.6.2 - 2010-12-08
 ------------------

@@ -9,7 +9,7 @@
                     portal_url context/@@plone/navigationRootUrl">
     <tal:actions repeat="daction view/actions">
         <li tal:attributes="id python:'document-action-' + normalizeString(daction['id'])"
-            tal:define="icon python:view.getIconFor('plone', daction['id'], 'site_icon.gif');
+            tal:define="icon python:view.getIconFor(daction['category'], daction['id'], 'site_icon.gif');
                         url daction/url;
                         title daction/title">
             <a href=""
