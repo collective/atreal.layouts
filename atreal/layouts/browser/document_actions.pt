@@ -16,7 +16,7 @@
                tal:attributes="href daction/url;
                                title daction/description">
                 <img tal:condition="icon" 
-                     tal:attributes="src python:portal_url+'/'+icon;
+                     tal:attributes="src python:icon;
                                      alt title;
                                      title title" />
                 <tal:okou tal:condition="python:not icon" tal:content="title">

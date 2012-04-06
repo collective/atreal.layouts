@@ -4,6 +4,8 @@ Changelog
 1.0.0 - Unreleased
 ------------------
 
+- Fix bug in document_actions.pt while rendering action icon URL. [tiazma]
+
 - Plone 4 Compatibility : Fix document_actions.pt template. [rbeylerian]
 
 - Plone 4 Compatibility : Update CSS. [rbeylerian]
