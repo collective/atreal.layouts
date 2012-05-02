@@ -78,7 +78,7 @@ class MatrixDisplay(BrowserView):
         if filter:
             folders = []
             for item in items:
-                if item['item'].is_folderish:
+                if item['item'].is_folderish or item['portal_type']=='PoiTracker':
                    folders.append(item)
             return template(self, items = folders, level=level, icons=icons)
         return template(self, items = items, level=level, icons=icons)

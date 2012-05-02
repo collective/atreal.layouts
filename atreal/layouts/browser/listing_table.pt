@@ -22,7 +22,7 @@
 	       tal:condition="icon" />
 	  <span class="discreet" tal:condition="not:icon">&bull;</span>
 	  <a href="#"
-	     tal:attributes="href string:${item_url}/view;
+	     tal:attributes="href string:${item_url};
 			     class string:${item_wf_state_class} url"
 	     tal:content="item/Title">
 	    Item Title
