@@ -1,12 +1,14 @@
 from zope.component import getMultiAdapter
+from zope.component import queryUtility
 
 from plone.app.layout.viewlets import ViewletBase
+from plone.app.layout.viewlets.content import DocumentBylineViewlet
+from plone.memoize.instance import memoize
 
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.CMFCore.utils import getToolByName
-
-from zope.component import queryUtility
 from Products.CMFPlone.interfaces import IPloneSiteRoot
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+
 from atreal.layouts.browser.controlpanel import IatRealLayoutsSchema
 
 class DocumentActionsViewlet(ViewletBase):
@@ -58,4 +60,5 @@ class restrictedAccessViewlet(ViewletBase):
             return u""
         self.request.response.redirect(login)
         return u""
-    
+
+

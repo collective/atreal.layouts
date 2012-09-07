@@ -63,3 +63,23 @@ msgstr "Listes des urls accessibles en anonyme"
 #. Default: "Vue matricielle"
 msgid "Matrix view"
 msgstr "Vue matricielle"
+
+#. Default: ""
+#: ./XXX:nn
+msgid "label_created_by"
+msgstr "Créé par ${author}"
+
+#. Default: ""
+#: ./XXX:nn
+msgid "label_modified_by"
+msgstr "modifié par ${author}"
+
+#. Default: ""
+#: ./XXX:nn
+msgid "label_modified_date"
+msgstr "le ${date}"
+
+#. Default: ""
+#: ./XXX:nn
+#msgid "label_"
+#msgstr ""

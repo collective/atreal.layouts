@@ -11,3 +11,7 @@ class IDocActionsAsIconsLayer(Interface):
 class IRestrictedAccessLayer(Interface):
     """ Marker interface that defines a Zope 3 browser layer.
     """
+
+class ICustomDocumentByLineLayer(Interface):
+    """ Marker interface that defines a Zope 3 browser layer.
+    """
