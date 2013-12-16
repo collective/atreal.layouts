@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<layers>
-    <layer name="atreal.layouts.custom_document_by_line"
-           interface="atreal.layouts.interfaces.ICustomDocumentByLineLayer" />
-</layers>

@@ -68,7 +68,7 @@ class ModificationLister(object):
 
 class CustomDocumentByLineViewlet(DocumentBylineViewlet):
 
-    index = ViewPageTemplateFile("custom_document_by_line.pt")
+    index = ViewPageTemplateFile("document_by_line.pt")
 
     def update(self):
         DocumentBylineViewlet.update(self)

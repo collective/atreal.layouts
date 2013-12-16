@@ -56,21 +56,21 @@
 
     <!-- Provide a custom document by line viewlet with *real* modification info -->
     <adapter for="Products.ATContentTypes.interface.interfaces.IATContentType"
-       factory=".custom_document_by_line.ModificationLister"
-       provides=".custom_document_by_line.IModificationLister" />
+       factory=".document_by_line.ModificationLister"
+       provides=".document_by_line.IModificationLister" />
 
     <subscriber
         for="Products.ATContentTypes.interface.interfaces.IATContentType
              Products.Archetypes.interfaces.IObjectEditedEvent"
-        handler=".custom_document_by_line.modificationNotifier"
+        handler=".document_by_line.modificationNotifier"
         />
 
     <browser:viewlet
         name="atreal.layouts.documentbyline"
         manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
-        class=".custom_document_by_line.CustomDocumentByLineViewlet"
+        class=".document_by_line.CustomDocumentByLineViewlet"
         permission="zope2.View"
-        layer="atreal.layouts.interfaces.ICustomDocumentByLineLayer"
+        layer="atreal.layouts.interfaces.IDocumentByLineLayer"
         />
     <!-- -->
 

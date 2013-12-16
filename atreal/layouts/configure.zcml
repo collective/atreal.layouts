@@ -46,10 +46,10 @@
         />
 
     <genericsetup:registerProfile
-        name="custom_document_by_line"
-        title="atRealLayouts: Custom Document By Line"
-        directory="profiles/custom_document_by_line"
-        description="Extension profile for Custom Document By Line"
+        name="document_by_line"
+        title="atRealLayouts: Document By Line"
+        directory="profiles/document_by_line"
+        description="Extension profile for Document By Line"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
