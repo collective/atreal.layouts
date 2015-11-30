@@ -53,6 +53,14 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
+    <genericsetup:registerProfile
+        name="friendly_members"
+        title="atRealLayouts: Friendly Members"
+        directory="profiles/friendly_members"
+        description="Extension profile for Firendly Members"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
 
     <genericsetup:registerProfile
         name="default"

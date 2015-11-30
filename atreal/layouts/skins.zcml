@@ -5,5 +5,7 @@
 
     <cmf:registerDirectory name="atreal_layouts_icontheme_tatooine"/>
     <cmf:registerDirectory name="atreal_layouts_extedit"/>
+    <cmf:registerDirectory name="atreal_layouts_friendly_members"/>
+
     
 </configure>
