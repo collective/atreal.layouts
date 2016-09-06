@@ -12,6 +12,8 @@
     <i18n:registerTranslations directory="locales" />
 
     <include file="skins.zcml" />
+
+    <adapter name="last_modifier" factory=".indexers.last_modifier_indexer" />
     
     <genericsetup:registerProfile
         name="restricted_access"

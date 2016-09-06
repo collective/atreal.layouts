@@ -1,7 +1,7 @@
-<div class="documentByLine"
+<div condition="view/available" class="documentByLine"
      id="plone-document-byline"
      i18n:domain="plone">
-
+lalal
  <tal:anonymous condition="view/show" i18n:domain="atreal.layouts">
    <span id="lock-icon"
          tal:define="lock_icon view/locked_icon"

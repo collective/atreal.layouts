@@ -54,6 +54,8 @@ class ModificationLister(object):
         if user:
             author = user.getId()
             self.modifications['last_modifier_name'] = author
+            # we also want the value to be indexed
+            self.context.reindexObject(idxs='last_modifier_name')
 
     @property
     def last_modifier_name(self):
@@ -70,8 +72,20 @@ class CustomDocumentByLineViewlet(DocumentBylineViewlet):
 
     index = ViewPageTemplateFile("document_by_line.pt")
 
+    def available(self):
+        """ """
+        try:
+            IModificationLister(self.context)
+        except TypeError:
+            return False
+        return True
+
     def update(self):
-        DocumentBylineViewlet.update(self)
+        super(CustomDocumentByLineViewlet, self).update()
+        
+        if not self.available():
+            return
+
         self.context_state = getMultiAdapter((self.context, self.request),
                                              name=u'plone_context_state')
         self.tools = getMultiAdapter((self.context, self.request),
