@@ -1,3 +1,4 @@
+from urllib import quote as url_quote
 from zope.component import getMultiAdapter
 from zope.component import queryUtility
 
