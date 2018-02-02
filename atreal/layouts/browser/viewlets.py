@@ -58,7 +58,7 @@ class restrictedAccessViewlet(ViewletBase):
         login = self.portal_state.portal_url() + "/login_form"
         if url == login:
             return u""
-        self.request.response.redirect(login)
+
+        redirect_url = '%s?came_from=%s' % (login, url_quote(self.request.get('URL', '')))
+        self.request.response.redirect(redirect_url)
         return u""
-
-
